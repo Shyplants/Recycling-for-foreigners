@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public GameObject trashPrefab;                        // 생성할 쓰레기의 프리팹
+    public GameObject[] trashPrefabs;                        // 생성할 쓰레기의 프리팹
     public float spawnInterval = 2f;                      // 생성 간격
     public Vector3 genPos = new Vector3(0f, 1f, 0f);      // 초기 생성위치
 
@@ -25,7 +25,8 @@ public class GameManager : MonoBehaviour
 
     void GenerateTrash()
     {
-        GameObject trash = Instantiate(trashPrefab, genPos, Quaternion.identity);
+        GameObject randomTrashPrefab = trashPrefabs[Random.Range(0, trashPrefabs.Length)];
+        GameObject trash = Instantiate(randomTrashPrefab, genPos, Quaternion.identity);
         trash.transform.SetParent(transform);
     }
 }
