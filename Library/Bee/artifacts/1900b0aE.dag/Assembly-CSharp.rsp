@@ -347,8 +347,8 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/_Scripts/Belts/Belt.cs"
 "Assets/_Scripts/Belts/BeltItem.cs"
-"Assets/_Scripts/Belts/ColorChange.cs"
-"Assets/_Scripts/Belts/Conveyor.cs"
+"Assets/_Scripts/ColorChange.cs"
+"Assets/_Scripts/Conveyor.cs"
 "Assets/_Scripts/Manager/BeltManager.cs"
 -langversion:9.0
 

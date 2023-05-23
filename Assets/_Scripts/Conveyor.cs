@@ -8,6 +8,7 @@ public class Conveyor : MonoBehaviour
     void Start()
     {
         rBody = GetComponent<Rigidbody>();
+        speed = 2;
     }
 
     void FixedUpdate() 
