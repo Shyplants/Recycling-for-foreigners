@@ -8694,7 +8694,7 @@ MonoBehaviour:
   - {fileID: 1226811400629940, guid: 49203af9f7278534ebb4ea7060f42843, type: 3}
   - {fileID: 1459594811507850, guid: dc1e01600de93ea44b8170ffdfe1b0dd, type: 3}
   spawnInterval: 5
-  genPos: {x: 2, y: 3, z: -2}
+  genPos: {x: 2, y: 3, z: -1}
 --- !u!4 &1785317095
 Transform:
   m_ObjectHideFlags: 0
