@@ -351,6 +351,7 @@
 "Assets/_Scripts/Conveyor.cs"
 "Assets/_Scripts/GameManager.cs"
 "Assets/_Scripts/Manager/BeltManager.cs"
+"Assets/_Scripts/RotateBinLid.cs"
 -langversion:9.0
 
 /deterministic
