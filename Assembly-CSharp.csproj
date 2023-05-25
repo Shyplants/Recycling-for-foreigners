@@ -41,8 +41,10 @@
      <Compile Include="Assets\_Scripts\GameManager.cs" />
      <Compile Include="Assets\_Scripts\Conveyor.cs" />
      <Compile Include="Assets\_Scripts\ColorChange.cs" />
+     <Compile Include="Assets\_Scripts\DrawSphere.cs" />
      <Compile Include="Assets\_Scripts\Belts\BeltItem.cs" />
-     <Compile Include="Assets\_Scripts\RotateBinLid.cs" />
+     <Compile Include="Assets\_Scripts\TrashBinLid.cs" />
+     <Compile Include="Assets\_Scripts\TrashBin.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.24f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>

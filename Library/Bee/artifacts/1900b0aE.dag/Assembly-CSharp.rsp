@@ -349,9 +349,11 @@
 "Assets/_Scripts/Belts/BeltItem.cs"
 "Assets/_Scripts/ColorChange.cs"
 "Assets/_Scripts/Conveyor.cs"
+"Assets/_Scripts/DrawSphere.cs"
 "Assets/_Scripts/GameManager.cs"
 "Assets/_Scripts/Manager/BeltManager.cs"
-"Assets/_Scripts/RotateBinLid.cs"
+"Assets/_Scripts/TrashBin.cs"
+"Assets/_Scripts/TrashBinLid.cs"
 -langversion:9.0
 
 /deterministic
