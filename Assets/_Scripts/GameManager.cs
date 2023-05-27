@@ -25,7 +25,8 @@ public class GameManager : MonoBehaviour
 
     void GenerateTrash()
     {
-        GameObject randomTrashPrefab = trashPrefabs[Random.Range(0, trashPrefabs.Length)];
+        //GameObject randomTrashPrefab = trashPrefabs[Random.Range(0, trashPrefabs.Length)];
+        GameObject randomTrashPrefab = trashPrefabs[10];
         GameObject trash = Instantiate(randomTrashPrefab, genPos, Quaternion.identity);
         trash.transform.SetParent(transform);
     }
