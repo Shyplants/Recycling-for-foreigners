@@ -3,18 +3,22 @@ using UnityEngine;
 public class TrashBinLid : MonoBehaviour
 {
     public bool isOpen;
-    float xAngle;
+    float xAngle, yAngle;
+    bool bInit = false;
 
     // Start is called before the first frame update
-    void Start()
+    public void Init(float _yAngle)
     {
+        bInit = true;
         xAngle = 360f;
-        isOpen = false;
+        yAngle = _yAngle;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(!bInit) return;
+
         if(xAngle < 0f) {
             xAngle += 360f;
         }
@@ -28,6 +32,6 @@ public class TrashBinLid : MonoBehaviour
             xAngle = Mathf.Min(xAngle, 360f);
         }
 
-        transform.rotation = Quaternion.Euler(xAngle, 0f, 0f);
+        transform.rotation = Quaternion.Euler(xAngle, yAngle, 0);
     }
 }

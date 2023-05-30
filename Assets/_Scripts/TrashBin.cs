@@ -7,20 +7,24 @@ public class TrashBin : MonoBehaviour
     public GameObject player;
     public TrashBinLid trashBinLid;
     public float collisionDistance = 2f;
+    public bool isLeft = false;
+    float yAngle;
 
     void Start()
     {
         trashBinLid = GetComponentInChildren<TrashBinLid>();
+        yAngle = isLeft ? 270f : 90f;
+        transform.rotation = Quaternion.Euler(0, yAngle, 0);
+        trashBinLid.Init(yAngle);    
     }
 
-    // Update is called once per frame
     void Update()
     {
         if(player && trashBinLid)
         {
             if(Vector3.Distance(transform.position, player.transform.position) < collisionDistance)
             {
-                Debug.Log("Player collided with trash bin!");
+                // Debug.Log("Player collided with trash bin!");
                 trashBinLid.isOpen = true;
             }
             else
