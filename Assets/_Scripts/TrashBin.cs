@@ -6,6 +6,7 @@ public class TrashBin : MonoBehaviour
 {
     public GameObject player;
     public TrashBinLid trashBinLid;
+    public TrashType trashType;
     public float collisionDistance = 2f;
     public bool isLeft = false;
     float yAngle;
@@ -25,10 +26,12 @@ public class TrashBin : MonoBehaviour
             if(Vector3.Distance(transform.position, player.transform.position) < collisionDistance)
             {
                 // Debug.Log("Player collided with trash bin!");
-                trashBinLid.isOpen = true;
+                trashBinLid.isOpen = true;  
             }
             else
                 trashBinLid.isOpen = false;
         }
     }
+
+    
 }

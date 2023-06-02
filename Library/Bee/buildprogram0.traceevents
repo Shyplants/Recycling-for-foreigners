@@ -1,26 +1,10 @@
 { "pid": 35942, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "netcorerun.dll" } },
 { "pid": 35942, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-1" } },
 { "pid": 35942, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
-<<<<<<< HEAD
-<<<<<<< HEAD
-{ "pid": 35942, "tid": 1, "ts": 1685700775978300, "dur": 538014, "ph": "X", "name": "BuildProgram", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1685700775979571, "dur": 92521, "ph": "X", "name": "BuildProgramContextConstructor", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1685700776470150, "dur": 3189, "ph": "X", "name": "OutputData.Write", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1685700776473344, "dur": 42954, "ph": "X", "name": "Backend.Write", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1685700776474027, "dur": 30702, "ph": "X", "name": "JsonToString", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1685700776521397, "dur": 1041, "ph": "X", "name": "", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1685700776520385, "dur": 2085, "ph": "X", "name": "Write chrome-trace events", "args": {} },
-=======
-=======
->>>>>>> parent of 28dbc438 (쓰레기 & 쓰레기통 충돌기능 추가)
-{ "pid": 35942, "tid": 1, "ts": 1685433566184828, "dur": 597629, "ph": "X", "name": "BuildProgram", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1685433566186487, "dur": 103205, "ph": "X", "name": "BuildProgramContextConstructor", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1685433566732802, "dur": 3005, "ph": "X", "name": "OutputData.Write", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1685433566735810, "dur": 46626, "ph": "X", "name": "Backend.Write", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1685433566736529, "dur": 31766, "ph": "X", "name": "JsonToString", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1685433566787534, "dur": 1460, "ph": "X", "name": "", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1685433566786381, "dur": 2647, "ph": "X", "name": "Write chrome-trace events", "args": {} },
-<<<<<<< HEAD
->>>>>>> parent of 28dbc438 (쓰레기 & 쓰레기통 충돌기능 추가)
-=======
->>>>>>> parent of 28dbc438 (쓰레기 & 쓰레기통 충돌기능 추가)
+{ "pid": 35942, "tid": 1, "ts": 1685701971815999, "dur": 538520, "ph": "X", "name": "BuildProgram", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1685701971816947, "dur": 64343, "ph": "X", "name": "BuildProgramContextConstructor", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1685701972311523, "dur": 2888, "ph": "X", "name": "OutputData.Write", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1685701972314414, "dur": 40081, "ph": "X", "name": "Backend.Write", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1685701972315111, "dur": 28307, "ph": "X", "name": "JsonToString", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1685701972359813, "dur": 1523, "ph": "X", "name": "", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1685701972358944, "dur": 2434, "ph": "X", "name": "Write chrome-trace events", "args": {} },
