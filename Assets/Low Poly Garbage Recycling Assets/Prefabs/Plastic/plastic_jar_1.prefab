@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 8073688125162499239}
   - component: {fileID: -828660899350509175}
   - component: {fileID: -5743954432424022694}
-  - component: {fileID: -6763408932720464105}
   m_Layer: 0
   m_Name: plastic_jar_1
   m_TagString: Untagged
@@ -115,16 +114,3 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &-6763408932720464105
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8778711544443679372}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59d5abff3536fba46b0f7b87f9af5037, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  trashType: 5

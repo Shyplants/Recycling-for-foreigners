@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 6900765912154275209}
   - component: {fileID: 2520741916978881485}
   - component: {fileID: -7154861063971527065}
-  - component: {fileID: -4011300221579964333}
   m_Layer: 0
   m_Name: tin_can_small_opened_4_2
   m_TagString: Untagged
@@ -115,16 +114,3 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &-4011300221579964333
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4955242141409074268}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59d5abff3536fba46b0f7b87f9af5037, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  trashType: 3

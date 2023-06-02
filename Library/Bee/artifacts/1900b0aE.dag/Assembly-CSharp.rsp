@@ -389,7 +389,6 @@
 "Assets/_Scripts/Trash.cs"
 "Assets/_Scripts/TrashBin.cs"
 "Assets/_Scripts/TrashBinLid.cs"
-"Assets/_Scripts/TrashBinTrigger.cs"
 -langversion:9.0
 
 /deterministic
