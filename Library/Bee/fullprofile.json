@@ -10,6 +10,7 @@
 { "pid": 0, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-2" } },
 { "pid": 0, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
 <<<<<<< HEAD
+<<<<<<< HEAD
 { "pid": 0, "tid": 1, "ts": 1685700775454694, "dur": 3110511, "ph": "X", "name": "Build ScriptAssemblies", "args": {} },
 { "pid": 0, "tid": 1, "ts": 1685700775455927, "dur": 116021, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
 { "pid": 0, "tid": 1, "ts": 1685700775572073, "dur": 117792, "ph": "X", "name": "Run Backend", "args": {} },
@@ -1027,6 +1028,15 @@
 { "pid": 0, "tid": 1, "ts": 1685693965448684, "dur": 788, "ph": "X", "name": "ChromeTraceHeader", "args": {} },
 { "pid": 0, "tid": 1, "ts": 1685693965452514, "dur": 1028, "ph": "X", "name": "", "args": {} },
 { "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
+=======
+{ "pid": 0, "tid": 1, "ts": 1685693964701664, "dur": 745501, "ph": "X", "name": "Build ScriptAssemblies", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1685693964703336, "dur": 111417, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1685693964814962, "dur": 531833, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1685693965346814, "dur": 100352, "ph": "X", "name": "Finish", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1685693965448684, "dur": 788, "ph": "X", "name": "ChromeTraceHeader", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1685693965452514, "dur": 1028, "ph": "X", "name": "", "args": {} },
+{ "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
+>>>>>>> parent of 28dbc438 (쓰레기 & 쓰레기통 충돌기능 추가)
 ,{ "pid":12345, "tid":0, "ts":1685693964866006, "dur":1331, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
 ,{ "pid":12345, "tid":0, "ts":1685693964867348, "dur":297, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
 ,{ "pid":12345, "tid":0, "ts":1685693964867704, "dur":30, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
@@ -1931,6 +1941,9 @@
 ,{ "pid":12345, "tid":0, "ts":1685693965325433, "dur":3877, "ph":"X", "name": "ProfilerWriteOutput" }
 ,{ "pid": 0, "tid": 1, "ts": 1685693965453744, "dur": 2362, "ph": "X", "name": "backend_profiler0.traceevents", "args": {} },
 { "pid": 0, "tid": 1, "ts": 1685693965450999, "dur": 5144, "ph": "X", "name": "Write chrome-trace events", "args": {} },
+<<<<<<< HEAD
+>>>>>>> parent of 28dbc438 (쓰레기 & 쓰레기통 충돌기능 추가)
+=======
 >>>>>>> parent of 28dbc438 (쓰레기 & 쓰레기통 충돌기능 추가)
 {}
 

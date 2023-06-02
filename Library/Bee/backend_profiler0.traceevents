@@ -1,5 +1,6 @@
 { "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
 <<<<<<< HEAD
+<<<<<<< HEAD
 ,{ "pid":12345, "tid":0, "ts":1685700775618790, "dur":750, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
 ,{ "pid":12345, "tid":0, "ts":1685700775619547, "dur":251, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
 ,{ "pid":12345, "tid":0, "ts":1685700775619856, "dur":28, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
@@ -76,6 +77,8 @@
 ,{ "pid":12345, "tid":8, "ts":1685700775624458, "dur":375, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
 ,{ "pid":12345, "tid":0, "ts":1685700775626929, "dur":401, "ph":"X", "name": "ProfilerWriteOutput" }
 =======
+=======
+>>>>>>> parent of 28dbc438 (쓰레기 & 쓰레기통 충돌기능 추가)
 ,{ "pid":12345, "tid":0, "ts":1685693964866006, "dur":1331, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
 ,{ "pid":12345, "tid":0, "ts":1685693964867348, "dur":297, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
 ,{ "pid":12345, "tid":0, "ts":1685693964867704, "dur":30, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
@@ -978,5 +981,8 @@
 ,{ "pid":12345, "tid":8, "ts":1685693964900287, "dur":37, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
 ,{ "pid":12345, "tid":8, "ts":1685693964900325, "dur":421920, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
 ,{ "pid":12345, "tid":0, "ts":1685693965325433, "dur":3877, "ph":"X", "name": "ProfilerWriteOutput" }
+<<<<<<< HEAD
+>>>>>>> parent of 28dbc438 (쓰레기 & 쓰레기통 충돌기능 추가)
+=======
 >>>>>>> parent of 28dbc438 (쓰레기 & 쓰레기통 충돌기능 추가)
 ,
