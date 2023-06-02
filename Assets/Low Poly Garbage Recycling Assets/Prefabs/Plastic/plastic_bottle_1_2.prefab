@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8317072698779867390}
   - component: {fileID: -5990903204348911821}
   - component: {fileID: -759543312270935003}
+  - component: {fileID: -2255676438751200606}
   m_Layer: 0
   m_Name: plastic_bottle_1_2
   m_TagString: Untagged
@@ -114,3 +115,16 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-2255676438751200606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 448845294040312141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59d5abff3536fba46b0f7b87f9af5037, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trashType: 5
