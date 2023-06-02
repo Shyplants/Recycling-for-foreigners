@@ -15,7 +15,7 @@ public class Conveyor : MonoBehaviour
     {
         Vector3 pos = rBody.position;
         
-        rBody.position -= transform.forward * speed * Time.fixedDeltaTime;
+        rBody.position -= transform.right * speed * Time.fixedDeltaTime;
         rBody.MovePosition(pos);
     }
 }

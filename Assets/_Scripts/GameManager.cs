@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public GameObject[] trashPrefabs;                        // 생성할 쓰레기의 프리팹
+    public GameObject[] trashPrefabs;                     // 생성할 쓰레기의 프리팹
     public float spawnInterval = 2f;                      // 생성 간격
     public Vector3 genPos = new Vector3(0f, 1f, 0f);      // 초기 생성위치
 
