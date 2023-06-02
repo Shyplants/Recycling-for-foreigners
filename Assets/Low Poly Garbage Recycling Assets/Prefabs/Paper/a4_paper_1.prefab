@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 1006410129065952594}
   - component: {fileID: 6900556123407469555}
   - component: {fileID: 5789622093802037477}
+  - component: {fileID: -5071240548791293856}
   m_Layer: 0
   m_Name: a4_paper_1
-  m_TagString: Untagged
+  m_TagString: Paper
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29,6 +30,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -52,10 +54,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -80,6 +84,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!65 &5789622093802037477
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -93,3 +98,15 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.3, y: 0.043648783, z: 0.22718276}
   m_Center: {x: 0, y: 0.022947075, z: 0.00000055879354}
+--- !u!114 &-5071240548791293856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5865623017231785845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be537ae9827a5a14c82b612e190a730c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
