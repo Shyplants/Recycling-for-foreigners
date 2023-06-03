@@ -18,7 +18,8 @@ public class Trash : MonoBehaviour
 {
     public TrashType trashType;
     public Mesh newMesh;
-
+    public bool bChanged = false;
+    
     public void ChangeMesh()
     {
         if(newMesh == null) return;
