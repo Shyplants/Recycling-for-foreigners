@@ -17,4 +17,16 @@ public enum TrashType
 public class Trash : MonoBehaviour
 {
     public TrashType trashType;
+    public Mesh newMesh;
+
+    public void ChangeMesh()
+    {
+        if(newMesh == null) return;
+
+        MeshFilter meshFilter = GetComponent<MeshFilter>();
+        if(meshFilter != null)
+        {
+            meshFilter.sharedMesh = newMesh;
+        }
+    }
 }
