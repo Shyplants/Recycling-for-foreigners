@@ -1031,6 +1031,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   leftPart: {fileID: 1076380065}
   rightPart: {fileID: 388348201}
+  TrashObject: {fileID: 0}
   rotationSpeed: 90
   bAction: 0
   rotationAngle: 30
@@ -1225,11 +1226,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4698741945106030, guid: 07f9048ddafe046b893ea5846d9de1f4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4698741945106030, guid: 07f9048ddafe046b893ea5846d9de1f4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.05
+      value: 0.434
       objectReference: {fileID: 0}
     - target: {fileID: 4698741945106030, guid: 07f9048ddafe046b893ea5846d9de1f4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1272,7 +1273,15 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4764387388694042, guid: 07f9048ddafe046b893ea5846d9de1f4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4764387388694042, guid: 07f9048ddafe046b893ea5846d9de1f4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4764387388694042, guid: 07f9048ddafe046b893ea5846d9de1f4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1483,8 +1492,10 @@ MonoBehaviour:
   player: {fileID: 1549877781}
   trashBinLid: {fileID: 1791942521}
   trashType: 2
+  trashBinTrigger: {fileID: 78460776}
   collisionDistance: 2
   isLeft: 1
+  score: 20
 --- !u!64 &533554137
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1834,8 +1845,10 @@ MonoBehaviour:
   player: {fileID: 1549877781}
   trashBinLid: {fileID: 1984332673}
   trashType: 0
+  trashBinTrigger: {fileID: 1060415257}
   collisionDistance: 2
   isLeft: 1
+  score: 10
 --- !u!54 &600869518
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3528,8 +3541,10 @@ MonoBehaviour:
   player: {fileID: 1549877781}
   trashBinLid: {fileID: 1123491128}
   trashType: 3
+  trashBinTrigger: {fileID: 164020388}
   collisionDistance: 2
   isLeft: 1
+  score: 30
 --- !u!54 &1011409003
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5741,8 +5756,10 @@ MonoBehaviour:
   player: {fileID: 1549877781}
   trashBinLid: {fileID: 260684660}
   trashType: 6
+  trashBinTrigger: {fileID: 644178047}
   collisionDistance: 2
   isLeft: 0
+  score: 20
 --- !u!54 &1569115993
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6332,8 +6349,10 @@ MonoBehaviour:
   player: {fileID: 1549877781}
   trashBinLid: {fileID: 1567145395}
   trashType: 7
+  trashBinTrigger: {fileID: 1982223558}
   collisionDistance: 2
   isLeft: 0
+  score: 10
 --- !u!54 &1722483010
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6543,6 +6562,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trashType: 0
   newMesh: {fileID: 0}
+  bChanged: 0
 --- !u!82 &1785317097
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6898,8 +6918,10 @@ MonoBehaviour:
   player: {fileID: 1549877781}
   trashBinLid: {fileID: 223727326}
   trashType: 1
+  trashBinTrigger: {fileID: 2032937516}
   collisionDistance: 2
   isLeft: 1
+  score: 20
 --- !u!64 &1856615408
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7134,8 +7156,10 @@ MonoBehaviour:
   player: {fileID: 1549877781}
   trashBinLid: {fileID: 1183590399}
   trashType: 4
+  trashBinTrigger: {fileID: 1300366753}
   collisionDistance: 2
   isLeft: 0
+  score: 30
 --- !u!64 &1913692223
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8365,8 +8389,10 @@ MonoBehaviour:
   player: {fileID: 1549877781}
   trashBinLid: {fileID: 1566860479}
   trashType: 5
+  trashBinTrigger: {fileID: 1961963947}
   collisionDistance: 2
   isLeft: 0
+  score: 20
 --- !u!54 &2100426716
 Rigidbody:
   m_ObjectHideFlags: 0

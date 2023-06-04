@@ -7,6 +7,7 @@ public class Scissors : MonoBehaviour
     public GameObject leftPart;
     public GameObject rightPart;
     public Trash TrashObject;    // 쓰래기 오브젝트를 가위와 연동할 로직이 필요함
+    private Quaternion initRotation;
     private float yAngle = 0f;
     public float rotationSpeed = 90;
     public bool bAction;
@@ -16,6 +17,7 @@ public class Scissors : MonoBehaviour
     void Start()
     {
         bAction = false;
+        initRotation = Quaternion.Euler(-0f, -0f, -90f);
     }
 
     void Update()
@@ -37,8 +39,8 @@ public class Scissors : MonoBehaviour
         else if(yAngle != 0f)
         {
             yAngle = 0f;
-            leftPart.transform.rotation = Quaternion.Euler(0, 0, 0);
-            rightPart.transform.rotation = Quaternion.Euler(0, 0, 0);
+            leftPart.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
+            rightPart.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
         }
     }
 
@@ -57,7 +59,7 @@ public class Scissors : MonoBehaviour
             yAngle -= rotationAngle*2;
         }
 
-        leftPart.transform.rotation = Quaternion.Euler(0, Mathf.Min(yAngle, rotationAngle*2-yAngle), 0);
-        rightPart.transform.rotation = Quaternion.Euler(0, -Mathf.Min(yAngle, rotationAngle*2-yAngle), 0);
+        leftPart.transform.rotation = Quaternion.Euler(0f, Mathf.Min(yAngle, rotationAngle*2-yAngle), 0f);
+        rightPart.transform.rotation = Quaternion.Euler(0f, -Mathf.Min(yAngle, rotationAngle*2-yAngle), 0f);
     }
 }
