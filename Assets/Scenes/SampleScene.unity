@@ -1690,8 +1690,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -6628,6 +6628,7 @@ MonoBehaviour:
   trashPrefabs:
   - {fileID: 4030596028037262094, guid: a9253eff7b8d645bbba9df8b04476792, type: 3}
   - {fileID: 2546246978259986268, guid: 9b11253ef403c48e9a9056a4c8263803, type: 3}
+  textField: {fileID: 569337866}
   spawnInterval: 5
   genPos: {x: 2.5, y: 2, z: -1}
 --- !u!4 &1785317095

@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
     public GameObject[] trashPrefabs;                     // 생성할 쓰레기의 프리팹
+    public TMP_Text textField;
     public float spawnInterval = 2f;                      // 생성 간격
     public Vector3 genPos = new Vector3(0f, 1f, 0f);      // 초기 생성위치
     private int totalScore;
@@ -26,6 +28,13 @@ public class GameManager : MonoBehaviour
             GenerateTrash();
             timer = 0f;
         }
+
+        Draw();
+    }
+
+    void Draw()
+    {
+        textField.text = "Total Score: " + totalScore;
     }
 
     void GenerateTrash()
