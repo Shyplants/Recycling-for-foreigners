@@ -7,7 +7,8 @@ public class Scissors : MonoBehaviour
     public GameObject leftPart;
     public GameObject rightPart;
     public Trash TrashObject;    // 쓰래기 오브젝트를 가위와 연동할 로직이 필요함
-    private Quaternion initRotation;
+    public AudioClip soundClip;
+    private AudioSource audioSource;
     private float yAngle = 0f;
     public float rotationSpeed = 90;
     public bool bAction;
@@ -17,7 +18,7 @@ public class Scissors : MonoBehaviour
     void Start()
     {
         bAction = false;
-        initRotation = Quaternion.Euler(-0f, -0f, -90f);
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -49,6 +50,7 @@ public class Scissors : MonoBehaviour
         // 쓰래기 오브젝트 라벨 없는 버전으로 바꿈
         if(TrashObject && TrashObject.bChanged == false)
         {
+            PlayAudioClip(soundClip);
             TrashObject.bChanged = true;
             TrashObject.ChangeMesh();
         }
@@ -61,5 +63,11 @@ public class Scissors : MonoBehaviour
 
         leftPart.transform.rotation = Quaternion.Euler(0f, Mathf.Min(yAngle, rotationAngle*2-yAngle), 0f);
         rightPart.transform.rotation = Quaternion.Euler(0f, -Mathf.Min(yAngle, rotationAngle*2-yAngle), 0f);
+    }
+
+    void PlayAudioClip(AudioClip clip)
+    {
+        audioSource.clip = clip;
+        audioSource.PlayOneShot(clip);
     }
 }
