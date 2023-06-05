@@ -128,3 +128,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trashType: 3
+  newMesh: {fileID: 5384356382870779685, guid: a4e3642caa5a34fd1b16f922c2de424e, type: 3}
+  bChanged: 0
