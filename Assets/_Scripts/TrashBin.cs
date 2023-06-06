@@ -7,8 +7,10 @@ public class TrashBin : MonoBehaviour
     public GameObject player;
     public TrashBinLid trashBinLid;
     public TrashType trashType;
+    public TrashBinTrigger trashBinTrigger;
     public float collisionDistance = 2f;
     public bool isLeft = false;
+    public int score;
     float yAngle;
 
     void Start()
@@ -17,6 +19,7 @@ public class TrashBin : MonoBehaviour
         yAngle = isLeft ? 270f : 90f;
         transform.rotation = Quaternion.Euler(0, yAngle, 0);
         trashBinLid.Init(yAngle);    
+        trashBinTrigger.Init(score);
     }
 
     void Update()

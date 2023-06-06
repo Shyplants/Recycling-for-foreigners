@@ -127,4 +127,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59d5abff3536fba46b0f7b87f9af5037, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trashType: 5
+  trashType: 6
+  newMesh: {fileID: 0}
+  bChanged: 0

@@ -148,3 +148,5 @@ MonoBehaviour:
   m_snapOrientation: 0
   m_snapOffset: {fileID: 0}
   m_grabPoints: []
+  newMesh: {fileID: 5785956994590762049, guid: 97b2901b606194533a90ad6979c64af3, type: 3}
+  bChanged: 0
