@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour
 {
     public GameObject[] trashPrefabs;                     // 생성할 쓰레기의 프리팹
     public TMP_Text textField;
+    public Texture[] trashMarks;
+    public RawImage trashImage;
     public float spawnInterval = 2f;                      // 생성 간격
     public float limitTime = 200f;                      
     public float runningTime = 0f;
@@ -61,5 +63,54 @@ public class GameManager : MonoBehaviour
         totalScore += score;
 
         Debug.Log("Total Score: " + totalScore);
+    }
+
+    int TrashType2ID(TrashType trashType)
+    {
+        int id = -1;
+        switch(trashType)
+        {
+            case TrashType.General:
+                break;
+            case TrashType.Paper:
+                id = 0;
+                break;
+            case TrashType.PaperPack:
+                id = 1;
+                break;
+            case TrashType.MetalCan:
+                id = 2;
+                break;
+            case TrashType.GlassBottle:
+                break;
+            case TrashType.PlasticBottle:
+                id = 4;
+                break; 
+            case TrashType.PlasticContainer:
+                id = 5;
+                break;
+            case TrashType.VinylProuduct:
+                id = 6;
+                break;
+        }
+
+        return id;
+    }
+
+    public void clearTrashImage()
+    {
+        trashImage.texture = null;
+    }
+    public void setTrashImage(TrashType trashType)
+    {
+        int id = TrashType2ID(trashType);
+        if(id == -1)
+        {
+            clearTrashImage();
+        }
+        else
+        {
+            trashImage.texture = trashMarks[id];
+        }
     }
 }

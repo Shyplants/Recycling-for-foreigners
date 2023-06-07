@@ -33,7 +33,8 @@ public class InputManager : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
-
+        
+        /*
         if (OVRInput.GetUp(OVRInput.Button.One))
         {
             //Debug.Log("Change!");
@@ -53,6 +54,7 @@ public class InputManager : MonoBehaviour
             ChangeTool();
             timer = 0f;
         }
+        */
     }
 
     void ScissorMove()
