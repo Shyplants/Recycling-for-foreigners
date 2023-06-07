@@ -30,6 +30,7 @@ public class InputManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /*
         timer += Time.deltaTime;
 
         if (IsRightHandGrab())
@@ -49,7 +50,7 @@ public class InputManager : MonoBehaviour
             //Debug.Log("Change!");
             ScissorMove();
         }
-
+        */
         /*
         if (timer >= spawnInterval)
         {
@@ -62,6 +63,7 @@ public class InputManager : MonoBehaviour
 
     bool IsRightHandGrab()
     {
+        /*
         GameObject[] objects = GameObject.FindObjectsOfType<GameObject>();
         List<GameObject> trashes = new List<GameObject>();
         // 모든 GameObject를 검사하여 스크립트가 있는지 확인합니다.
@@ -97,6 +99,8 @@ public class InputManager : MonoBehaviour
         {
             return false;
         }
+        */
+        return true;
     }
     void NextTool()
     {
