@@ -17,8 +17,7 @@ public class GameManager : MonoBehaviour
     public float runningTime = 0f;
     public Vector3 genPos = new Vector3(0f, 1f, 0f);      // 초기 생성위치
     int totalScore, remainingSeconds;
-    int sightId = 0;
-    float ratio;
+    int sightLevel = 0, curLevel;
 
     private float genTimer;
 
@@ -26,8 +25,7 @@ public class GameManager : MonoBehaviour
     {
         totalScore = 0;
         genTimer = 0f;
-        ratio = limitTime / outSights.Length;
-        UpdateSights(0);
+        UpdateSights(sightLevel);
     }
 
     void Update()
@@ -46,12 +44,29 @@ public class GameManager : MonoBehaviour
             genTimer = 0f;
         }
 
-        Draw();
-        if(Mathf.FloorToInt(runningTime/ratio) != sightId)
+        
+
+        totalScore = Mathf.Max(0, totalScore);
+        if(totalScore < 20)
+            curLevel = 0;
+        else if(totalScore < 60)
+            curLevel = 1;
+        else if(totalScore < 120)
+            curLevel = 2;
+        else if(totalScore < 160)
+            curLevel = 3;
+        else if(totalScore < 200)
+            curLevel = 4;
+        else
+            curLevel = 5;
+
+        if(curLevel != sightLevel)
         {
-            sightId = Mathf.FloorToInt(runningTime/ratio);
-            UpdateSights(sightId);
+            sightLevel = curLevel;
+            UpdateSights(sightLevel);
         }
+
+        Draw();
     }
 
     void Draw()
