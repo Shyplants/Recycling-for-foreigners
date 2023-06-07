@@ -103,6 +103,7 @@ public class InputManager : MonoBehaviour
         {
             return false;
         }
+        return true;
     }
     void NextTool()
     {
