@@ -1,9 +1,0 @@
-diff a/Assets/Oculus/Interaction/Samples/Scenes/Examples/DistanceGrabExamples.unity.meta b/Assets/Oculus/Interaction/Samples/Scenes/Examples/DistanceGrabExamples.unity.meta	(rejected hunks)
-@@ -0,6 +0,7 @@
- ========
- guid: 09667b5ba590148469d02d69c17d54e8
- NativeFormatImporter:
-+>>>>>>>> origin/main:Assets/Cyberpunk Material Pack/Textures/cyberpunk_1/Materials/6x6_tex_BaseMap.mat.meta
-   externalObjects: {}
-   mainObjectFileID: 2100000
-   userData: 
