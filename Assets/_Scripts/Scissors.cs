@@ -8,6 +8,7 @@ public class Scissors : MonoBehaviour
     public GameObject rightPart;
     public Trash TrashObject;    // 쓰래기 오브젝트를 가위와 연동할 로직이 필요함
     public AudioClip soundClip;
+    public AudioClip wrongClip;
     private AudioSource audioSource;
     private float yAngle = 0f;
     public float rotationSpeed = 90;
@@ -88,15 +89,12 @@ public class Scissors : MonoBehaviour
             TrashObject.ChangeMesh();
         }
 
-        // 이미 바뀐거면 효과음 필요!!!
-        if (TrashObject && (TrashObject.bChanged == true))
+        // 올바르지 않은경우(쓰레기 오브젝트 X or 이미 변경된 상태)
+        // Sisssors 오브젝트에 wrong sound clip 추가 필요
+        if (TrashObject == null || TrashObject.bChanged)
         {
-            Debug.Log(TrashObject);
-            PlayAudioClip(soundClip);
-            TrashObject.bChanged = true;
-            TrashObject.ChangeMesh();
+            PlayAudioClip(wrongClip);
         }
-
 
         yAngle += Time.deltaTime * rotationSpeed;
         if(yAngle > rotationAngle*2)
