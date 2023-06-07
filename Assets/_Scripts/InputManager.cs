@@ -44,12 +44,6 @@ public class InputManager : MonoBehaviour
             //timer = 0f;
         }
 
-        if (OVRInput.GetUp(OVRInput.Button.Two))
-        {
-            //Debug.Log("Change!");
-            ChangeToolReverse();
-        }
-
         if (OVRInput.GetUp(OVRInput.Button.Three))
         {
             //Debug.Log("Change!");

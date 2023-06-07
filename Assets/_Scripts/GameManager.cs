@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
     public float limitTime = 200f;
     public float runningTime = 0f;
     public Vector3 genPos = new Vector3(0f, 1f, 0f);      // 초기 생성위치
-    int totalScore, remainingSeconds;
+    public int totalScore, remainingSeconds;
     int sightLevel = 0, curLevel;
 
     private float genTimer;
@@ -110,6 +110,7 @@ public class GameManager : MonoBehaviour
         switch (trashType)
         {
             case TrashType.General:
+                id = 7;
                 break;
             case TrashType.Paper:
                 id = 0;
