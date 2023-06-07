@@ -6733,6 +6733,7 @@ MonoBehaviour:
   rightHand: {fileID: 1120100364}
   gm: {fileID: 1785317094}
   spawnInterval: 2
+  collisionDistance: 0.3
 --- !u!4 &1659702878
 Transform:
   m_ObjectHideFlags: 0
@@ -7370,7 +7371,7 @@ MonoBehaviour:
   - {fileID: 2800000, guid: 182ca314cd8db2943bdeae8d67ecabaf, type: 3}
   - {fileID: 2800000, guid: b8a6d4944c2f29d4a8cbc841199482e8, type: 3}
   trashImage: {fileID: 1008039045}
-  spawnInterval: 1
+  spawnInterval: 5
   limitTime: 200
   runningTime: 0
   genPos: {x: 3.5, y: 2, z: -1}
@@ -9809,7 +9810,7 @@ MonoBehaviour:
   requestFaceTrackingPermissionOnStartup: 0
   requestEyeTrackingPermissionOnStartup: 0
   _localDimming: 1
-  _trackingOriginType: 0
+  _trackingOriginType: 1
   usePositionTracking: 1
   useRotationTracking: 1
   useIPDInPositionTracking: 1
