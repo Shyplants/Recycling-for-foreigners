@@ -18,36 +18,41 @@ public class InputManager : MonoBehaviour
 
     void Start()
     {
-        currentHand = Instantiate(tools[toolsIndex], rightHand);
+        currentHand = Instantiate(tools[toolsIndex], leftHand);
+        currentHand.transform.localPosition = new Vector3(0, 0, 0);
+        NextTool();
+    }
+
+    void NextTool() 
+    {
         toolsIndex++;
+        toolsIndex = toolsIndex % tools.Length;
     }
 
     // Update is called once per frame
     void Update()
     {
-        //        timer += Time.deltaTime;
+        timer += Time.deltaTime;
 
         if (OVRInput.GetUp(OVRInput.Button.One))
         {
-            Debug.Log("Change!");
+            //Debug.Log("Change!");
             ChangeTool();
             timer = 0f;
         }
 
         if (OVRInput.GetUp(OVRInput.Button.Two))
         {
-            Debug.Log("Change!");
+            //Debug.Log("Change!");
             ScissorMove();
         }
 
-        /*
         if (timer >= spawnInterval)
         {
-            Debug.Log("Change!");
+            //Debug.Log("Change!");
             ChangeTool();
             timer = 0f;
         }
-        */
     }
 
     void ScissorMove()
@@ -61,10 +66,10 @@ public class InputManager : MonoBehaviour
 
     void ChangeTool()
     {
-        Debug.Log(toolsIndex);
+        //Debug.Log(toolsIndex);
         Destroy(currentHand);
         currentHand = Instantiate(tools[toolsIndex], leftHand);
-        toolsIndex++;
-        toolsIndex = toolsIndex % tools.Length;
+        currentHand.transform.localPosition = new Vector3(0, 0, 0);
+        NextTool();
     }
 }

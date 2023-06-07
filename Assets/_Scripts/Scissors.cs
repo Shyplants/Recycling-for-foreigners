@@ -13,7 +13,7 @@ public class Scissors : MonoBehaviour
     public float rotationSpeed = 90;
     public bool bAction;
     public float rotationAngle = 30;
-    public float rotationDuration = 1f;
+    public float rotationDuration = 2f;    // 비율 2(시간) : 3(가위질)
     private float timer = 0f;
     void Start()
     {
@@ -21,16 +21,45 @@ public class Scissors : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
     }
 
+    void FindNearestTarget()
+    {
+        GameObject[] objects = GameObject.FindObjectsOfType<GameObject>();
+        List<GameObject> trashes = new List<GameObject>();
+        // 모든 GameObject를 검사하여 스크립트가 있는지 확인합니다.
+        foreach (GameObject obj in objects)
+        {
+            Trash script = obj.GetComponent<Trash>();
+            if (script != null)
+            {
+                // 스크립트를 찾았으면 해당 GameObject를 반환합니다.
+                trashes.Add(obj);
+            }
+        }
+
+        GameObject nearest = null;
+        float min_distance = Mathf.Infinity;
+        foreach (GameObject obj in trashes)
+        {
+            float distance = Vector3.Distance(obj.transform.position, transform.position);
+            if (min_distance > distance)
+            {
+                min_distance = distance;
+                nearest = obj;
+            }
+        }
+
+        TrashObject = nearest.GetComponent<Trash>();
+    }
     void Update()
     {
         if(bAction == true)
         {
             timer += Time.deltaTime;
-        }
-        else if(timer > rotationDuration)
-        {
-            bAction = false;
-            timer = 0f;
+            if (timer > rotationDuration)
+            {
+                bAction = false;
+                timer = 0f;
+            }
         }
 
         if(bAction)
@@ -47,13 +76,27 @@ public class Scissors : MonoBehaviour
 
     public void RemoveAction()
     {
+        // 가장 가까운 오브젝트 찾음!
+        FindNearestTarget();
+
         // 쓰래기 오브젝트 라벨 없는 버전으로 바꿈
-        if(TrashObject && TrashObject.bChanged == false)
+        if (TrashObject && (TrashObject.bChanged == false))
         {
+            Debug.Log(TrashObject);
             PlayAudioClip(soundClip);
             TrashObject.bChanged = true;
             TrashObject.ChangeMesh();
         }
+
+        // 이미 바뀐거면 효과음 필요!!!
+        if (TrashObject && (TrashObject.bChanged == true))
+        {
+            Debug.Log(TrashObject);
+            PlayAudioClip(soundClip);
+            TrashObject.bChanged = true;
+            TrashObject.ChangeMesh();
+        }
+
 
         yAngle += Time.deltaTime * rotationSpeed;
         if(yAngle > rotationAngle*2)
