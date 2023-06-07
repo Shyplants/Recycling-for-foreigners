@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 5785467175884602893}
   - component: {fileID: -2866531932697983352}
   - component: {fileID: -8464863898567662444}
+  - component: {fileID: 7863078430951328901}
   m_Layer: 0
   m_Name: bottle_of_beer_1_2
   m_TagString: Glass
@@ -144,3 +145,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundEffect: {fileID: 0}
+--- !u!114 &7863078430951328901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4678924341381392765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02d61468f8b77ae4b92c344bc9a600fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_allowOffhandGrab: 1
+  m_snapPosition: 0
+  m_snapOrientation: 0
+  m_snapOffset: {fileID: 0}
+  m_grabPoints: []

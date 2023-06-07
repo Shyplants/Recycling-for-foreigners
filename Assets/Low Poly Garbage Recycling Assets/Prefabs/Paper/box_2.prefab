@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: -5886567795587563759}
   - component: {fileID: -3787372822307897438}
   - component: {fileID: 5809508396121442021}
+  - component: {fileID: 9108638904807970642}
   m_Layer: 0
   m_Name: box_2
   m_TagString: Paper
@@ -144,3 +145,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundEffect: {fileID: 0}
+--- !u!114 &9108638904807970642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6992992264900075630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02d61468f8b77ae4b92c344bc9a600fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_allowOffhandGrab: 1
+  m_snapPosition: 0
+  m_snapOrientation: 0
+  m_snapOffset: {fileID: 0}
+  m_grabPoints: []

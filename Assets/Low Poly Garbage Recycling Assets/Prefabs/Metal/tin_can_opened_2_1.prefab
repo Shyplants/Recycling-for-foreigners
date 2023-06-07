@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: -1727646969420375006}
   - component: {fileID: 1597287832694722957}
   - component: {fileID: 3366281693157045982}
+  - component: {fileID: 1697878941303493916}
   m_Layer: 0
   m_Name: tin_can_opened_2_1
   m_TagString: Metal
@@ -130,3 +131,20 @@ MonoBehaviour:
   trashType: 3
   newMesh: {fileID: 0}
   bChanged: 0
+--- !u!114 &1697878941303493916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9130276468265857472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02d61468f8b77ae4b92c344bc9a600fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_allowOffhandGrab: 1
+  m_snapPosition: 0
+  m_snapOrientation: 0
+  m_snapOffset: {fileID: 0}
+  m_grabPoints: []
