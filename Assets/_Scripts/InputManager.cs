@@ -30,7 +30,7 @@ public class InputManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timer += Time.deltaTime;
+        //timer += Time.deltaTime;
 
         if (IsRightHandGrab())
         {
@@ -41,10 +41,16 @@ public class InputManager : MonoBehaviour
         {
             //Debug.Log("Change!");
             ChangeTool();
-            timer = 0f;
+            //timer = 0f;
         }
 
         if (OVRInput.GetUp(OVRInput.Button.Two))
+        {
+            //Debug.Log("Change!");
+            ChangeToolReverse();
+        }
+
+        if (OVRInput.GetUp(OVRInput.Button.Three))
         {
             //Debug.Log("Change!");
             ScissorMove();
@@ -106,9 +112,11 @@ public class InputManager : MonoBehaviour
 
     void ScissorMove()
     {
-        Scissors scissor = tools[toolsIndex].GetComponent<Scissors>();
+        //int currentIndex = (toolsIndex - 1) % tools.Length;
+        Scissors scissor = currentHand.GetComponent<Scissors>();
         if (scissor != null)
         {
+            //gm.spawnInterval = 1;
             scissor.bAction = true;
         }
     }
@@ -117,6 +125,16 @@ public class InputManager : MonoBehaviour
     {
         //Debug.Log(toolsIndex);
         Destroy(currentHand);
+        currentHand = Instantiate(tools[toolsIndex], leftHand);
+        currentHand.transform.localPosition = new Vector3(0, 0, 0);
+        NextTool();
+    }
+
+    void ChangeToolReverse()
+    {
+        //Debug.Log(toolsIndex);
+        Destroy(currentHand);
+        toolsIndex = (toolsIndex - 2) % tools.Length;
         currentHand = Instantiate(tools[toolsIndex], leftHand);
         currentHand.transform.localPosition = new Vector3(0, 0, 0);
         NextTool();

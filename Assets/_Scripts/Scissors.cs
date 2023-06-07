@@ -70,8 +70,8 @@ public class Scissors : MonoBehaviour
         else if(yAngle != 0f)
         {
             yAngle = 0f;
-            leftPart.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
-            rightPart.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
+            leftPart.transform.localRotation = Quaternion.Euler(0f, 0f, 0f);
+            rightPart.transform.localRotation = Quaternion.Euler(0f, 0f, 0f);
         }
     }
 
@@ -102,8 +102,8 @@ public class Scissors : MonoBehaviour
             yAngle -= rotationAngle*2;
         }
 
-        leftPart.transform.rotation = Quaternion.Euler(0f, Mathf.Min(yAngle, rotationAngle*2-yAngle), 0f);
-        rightPart.transform.rotation = Quaternion.Euler(0f, -Mathf.Min(yAngle, rotationAngle*2-yAngle), 0f);
+        leftPart.transform.localRotation = Quaternion.Euler(0f, Mathf.Min(yAngle, rotationAngle*2-yAngle), 0f);
+        rightPart.transform.localRotation = Quaternion.Euler(0f, -Mathf.Min(yAngle, rotationAngle*2-yAngle), 0f);
     }
 
     void PlayAudioClip(AudioClip clip)
