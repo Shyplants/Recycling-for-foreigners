@@ -14,9 +14,10 @@ GameObject:
   - component: {fileID: -3020702531262129907}
   - component: {fileID: -7411898746127481924}
   - component: {fileID: -5228702961410684388}
+  - component: {fileID: 1047356514975354696}
   m_Layer: 0
   m_Name: box_3
-  m_TagString: Untagged
+  m_TagString: Paper
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -128,3 +129,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trashType: 1
+  newMesh: {fileID: 0}
+  bChanged: 0
+--- !u!114 &1047356514975354696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3356396343979441642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bc6ffa789f8dad429466419d235093f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundEffect: {fileID: 0}

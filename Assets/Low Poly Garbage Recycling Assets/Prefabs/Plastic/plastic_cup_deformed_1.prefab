@@ -14,9 +14,10 @@ GameObject:
   - component: {fileID: -1198900980903316137}
   - component: {fileID: 3353605905723580218}
   - component: {fileID: -3123130908105395157}
+  - component: {fileID: -2482924202086638076}
   m_Layer: 0
   m_Name: plastic_cup_deformed_1
-  m_TagString: Untagged
+  m_TagString: Plastic
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -130,3 +131,16 @@ MonoBehaviour:
   trashType: 6
   newMesh: {fileID: 0}
   bChanged: 0
+--- !u!114 &-2482924202086638076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3043714035963390797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bc6ffa789f8dad429466419d235093f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundEffect: {fileID: 0}

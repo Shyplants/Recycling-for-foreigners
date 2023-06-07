@@ -14,9 +14,10 @@ GameObject:
   - component: {fileID: -1509286735775262334}
   - component: {fileID: 6220234967710046804}
   - component: {fileID: 6366428095201131885}
+  - component: {fileID: 1847858592015283197}
   m_Layer: 0
   m_Name: box_milk_3
-  m_TagString: Untagged
+  m_TagString: Paper
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -130,3 +131,16 @@ MonoBehaviour:
   trashType: 2
   newMesh: {fileID: 0}
   bChanged: 0
+--- !u!114 &1847858592015283197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7099022616981471884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bc6ffa789f8dad429466419d235093f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundEffect: {fileID: 0}

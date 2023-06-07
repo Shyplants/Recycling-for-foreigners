@@ -97,9 +97,10 @@ GameObject:
   - component: {fileID: 8745609616113960502}
   - component: {fileID: 4700677699977250797}
   - component: {fileID: 7764015708694921865}
+  - component: {fileID: 6228025329949866330}
   m_Layer: 0
   m_Name: holder_paper
-  m_TagString: Untagged
+  m_TagString: Paper
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -214,3 +215,16 @@ MonoBehaviour:
   trashType: 1
   newMesh: {fileID: 0}
   bChanged: 0
+--- !u!114 &6228025329949866330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4101950548725171403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bc6ffa789f8dad429466419d235093f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundEffect: {fileID: 0}

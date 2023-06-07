@@ -14,9 +14,10 @@ GameObject:
   - component: {fileID: 7262106272856476346}
   - component: {fileID: -1087326691269997414}
   - component: {fileID: 4290441330171081010}
+  - component: {fileID: 3181268759191848526}
   m_Layer: 0
   m_Name: soda_can_deformed_3_1
-  m_TagString: Untagged
+  m_TagString: Plastic
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -128,3 +129,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trashType: 5
+  newMesh: {fileID: 0}
+  bChanged: 0
+--- !u!114 &3181268759191848526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 780332163293016199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bc6ffa789f8dad429466419d235093f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundEffect: {fileID: 0}

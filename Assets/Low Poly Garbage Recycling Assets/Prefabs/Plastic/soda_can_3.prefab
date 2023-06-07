@@ -14,9 +14,10 @@ GameObject:
   - component: {fileID: -1767894263786547440}
   - component: {fileID: 6228882323139715232}
   - component: {fileID: 5972601910135450647}
+  - component: {fileID: 4072507754719096408}
   m_Layer: 0
   m_Name: soda_can_3
-  m_TagString: Untagged
+  m_TagString: Plastic
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -130,3 +131,16 @@ MonoBehaviour:
   trashType: 5
   newMesh: {fileID: -3547744467568274926, guid: 93408f50d3280483fb9f4f1625210d9c, type: 3}
   bChanged: 0
+--- !u!114 &4072507754719096408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1561555133460709229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bc6ffa789f8dad429466419d235093f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundEffect: {fileID: 0}

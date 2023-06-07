@@ -14,9 +14,10 @@ GameObject:
   - component: {fileID: -7988518956464413975}
   - component: {fileID: 7140814640430413934}
   - component: {fileID: 3999746125503100871}
+  - component: {fileID: 6754188536859942547}
   m_Layer: 0
   m_Name: bottle of wine_2_1
-  m_TagString: Untagged
+  m_TagString: Glass
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -130,3 +131,16 @@ MonoBehaviour:
   trashType: 4
   newMesh: {fileID: 6945056533805645297, guid: 412867aa8cf824f1b959448557c80bde, type: 3}
   bChanged: 0
+--- !u!114 &6754188536859942547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8867374844307092567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bc6ffa789f8dad429466419d235093f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundEffect: {fileID: 0}

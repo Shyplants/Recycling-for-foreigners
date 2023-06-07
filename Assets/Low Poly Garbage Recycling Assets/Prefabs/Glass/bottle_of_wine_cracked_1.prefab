@@ -14,9 +14,10 @@ GameObject:
   - component: {fileID: 2133868775668148276}
   - component: {fileID: -1927561020381253888}
   - component: {fileID: 8762184921726912537}
+  - component: {fileID: 5696031931079163087}
   m_Layer: 0
   m_Name: bottle_of_wine_cracked_1
-  m_TagString: Untagged
+  m_TagString: Glass
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -130,3 +131,16 @@ MonoBehaviour:
   trashType: 0
   newMesh: {fileID: 0}
   bChanged: 0
+--- !u!114 &5696031931079163087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5272358848271304467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bc6ffa789f8dad429466419d235093f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundEffect: {fileID: 0}
