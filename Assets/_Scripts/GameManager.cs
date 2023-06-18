@@ -13,10 +13,10 @@ public class GameManager : MonoBehaviour
     public Texture[] outSights;
     public RawImage trashImage;
     public float spawnInterval = 2f;                      // 생성 간격
-    public float limitTime = 200f;                      
+    public float limitTime = 200f;
     public float runningTime = 0f;
     public Vector3 genPos = new Vector3(0f, 1f, 0f);      // 초기 생성위치
-    int totalScore, remainingSeconds;
+    public int totalScore, remainingSeconds;
     int sightLevel = 0, curLevel;
 
     private float genTimer;
@@ -33,34 +33,34 @@ public class GameManager : MonoBehaviour
         runningTime += Time.deltaTime;
         genTimer += Time.deltaTime;
 
-        if(runningTime >= limitTime)
+        if (runningTime >= limitTime)
         {
             Application.Quit();
         }
 
-        if(genTimer >= spawnInterval)
+        if (genTimer >= spawnInterval)
         {
             GenerateTrash();
             genTimer = 0f;
         }
 
-        
+
 
         totalScore = Mathf.Max(0, totalScore);
-        if(totalScore < 20)
+        if (totalScore < 20)
             curLevel = 0;
-        else if(totalScore < 60)
+        else if (totalScore < 60)
             curLevel = 1;
-        else if(totalScore < 120)
+        else if (totalScore < 120)
             curLevel = 2;
-        else if(totalScore < 160)
+        else if (totalScore < 160)
             curLevel = 3;
-        else if(totalScore < 200)
+        else if (totalScore < 200)
             curLevel = 4;
         else
             curLevel = 5;
 
-        if(curLevel != sightLevel)
+        if (curLevel != sightLevel)
         {
             sightLevel = curLevel;
             UpdateSights(sightLevel);
@@ -72,18 +72,18 @@ public class GameManager : MonoBehaviour
     void Draw()
     {
         textField.text = "Total Score: " + totalScore + "\n";
-        
+
         remainingSeconds = Mathf.FloorToInt(limitTime - runningTime);
-        textField.text += "Remaining Time: " + string.Format("{0:D2}:{1:D2}", remainingSeconds/60, remainingSeconds%60);
+        textField.text += "Remaining Time: " + string.Format("{0:D2}:{1:D2}", remainingSeconds / 60, remainingSeconds % 60);
     }
 
     void UpdateSights(int id)
     {
-        foreach(Transform child in outSightTransform)
+        foreach (Transform child in outSightTransform)
         {
             RawImage rawImage = child.GetComponent<RawImage>();
 
-            if(rawImage != null)
+            if (rawImage != null)
             {
                 rawImage.texture = outSights[id];
             }
@@ -107,9 +107,10 @@ public class GameManager : MonoBehaviour
     int TrashType2ID(TrashType trashType)
     {
         int id = -1;
-        switch(trashType)
+        switch (trashType)
         {
             case TrashType.General:
+                id = 7;
                 break;
             case TrashType.Paper:
                 id = 0;
@@ -124,7 +125,7 @@ public class GameManager : MonoBehaviour
                 break;
             case TrashType.PlasticBottle:
                 id = 4;
-                break; 
+                break;
             case TrashType.PlasticContainer:
                 id = 5;
                 break;
@@ -143,7 +144,7 @@ public class GameManager : MonoBehaviour
     public void setTrashImage(TrashType trashType)
     {
         int id = TrashType2ID(trashType);
-        if(id == -1)
+        if (id == -1)
         {
             clearTrashImage();
         }

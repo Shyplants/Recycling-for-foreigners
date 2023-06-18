@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3054690485681816158}
   - component: {fileID: 8312531640228061246}
   - component: {fileID: 6340670042535320897}
+  - component: {fileID: -7038880163032346730}
   m_Layer: 0
   m_Name: can_1
   m_TagString: Metal
@@ -130,3 +131,20 @@ MonoBehaviour:
   trashType: 3
   newMesh: {fileID: 5384356382870779685, guid: a4e3642caa5a34fd1b16f922c2de424e, type: 3}
   bChanged: 0
+--- !u!114 &-7038880163032346730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6571694161455990723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02d61468f8b77ae4b92c344bc9a600fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_allowOffhandGrab: 1
+  m_snapPosition: 0
+  m_snapOrientation: 0
+  m_snapOffset: {fileID: 0}
+  m_grabPoints: []
